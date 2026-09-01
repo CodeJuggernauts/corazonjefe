@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutSection = () => {
   return (
     <section className='px-6 py-20 backdrop-blur-sm bg-black/40 border-t border-[#4b0082]/30'>

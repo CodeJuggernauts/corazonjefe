@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const lines = [
@@ -39,18 +38,6 @@ const lines = [
     className: "text-xl md:text-2xl font-semibold text-white mt-8",
     direction: "left",
   },
-  // {
-  //   text: (
-  //     <>
-  //       <span className='[text-shadow:0_2px_12px_rgba(255,255,255,0.35)] font-extrabold'>
-  //         Centerpiece
-  //       </span>
-  //       &nbsp;of every collection
-  //     </>
-  //   ),
-  //   className: "text-xl md:text-2xl font-semibold text-white mt-8",
-  //   direction: "right",
-  // },
   {
     text: "Coming Soon!",
     className: "text-4xl md:text-6xl font-black text-white mt-8",

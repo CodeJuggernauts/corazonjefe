@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import createContact from "../services/brevo/createContact";
 
 const useSignup = () => {
   const [status, setStatus] = useState("idle");
@@ -8,8 +7,6 @@ const useSignup = () => {
     setStatus("submitting");
 
     try {
-      // await createContact(email);
-
       const response = await fetch("/.netlify/functions/createContact", {
         method: "POST",
         headers: {

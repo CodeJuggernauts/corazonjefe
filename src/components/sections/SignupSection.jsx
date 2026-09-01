@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useSignup from "../../hooks/useSignup";
 import SocialSection from "../socials/SocialSection";
 
