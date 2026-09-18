@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className='px-6 py-20 backdrop-blur-sm bg-black/40 border-t border-[#4b0082]/30'>
+    <section className='px-6 py-20 bg-black/40 border-t border-[#4b0082]/30'>
       <div className='max-w-3xl mx-auto text-center'>
         <h2 className='text-2xl font-semibold mb-6 text-[#d4af37]'>
           What is Corazon Jefe?

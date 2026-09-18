@@ -7,7 +7,7 @@ const SignupSection = () => {
   const { signup } = useSignup();
 
   return (
-    <section className='px-6 py-20 backdrop-blur-sm bg-[#3b0a0a]/40 border-t border-[#3b0a0a]/40'>
+    <section className='px-6 py-20 bg-[#3b0a0a]/40 border-t border-[#3b0a0a]/40'>
       <div className='max-w-xl mx-auto text-center'>
         <h2 className='text-2xl font-semibold mb-4 text-[#d4af37]'>
           Stay Connected
@@ -33,7 +33,6 @@ const SignupSection = () => {
             required
             value={email}
             onChange={(event) => {
-              console.log("i got here");
               setEmail(event.target.value);
             }}
             className='flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#d4af37]'

@@ -5,64 +5,58 @@ const lines = [
     text: (
       <>
         Born from&nbsp;
-        <span className='text-[#8b0000] [text-shadow:0_2px_12px_rgba(255,255,255,0.35)] font-extrabold'>
+        <span className='text-[#8b0000] [text-shadow:-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000,0_0_6px_rgba(0,0,0,0.8)] font-extrabold'>
           passion
         </span>
       </>
     ),
     className: "text-xl md:text-2xl font-semibold text-white mt-8",
-    direction: "left",
   },
   {
     text: (
       <>
         Destined to&nbsp;
-        <span className='text-[#4b0082] [text-shadow:0_2px_12px_rgba(255,255,255,0.35)] font-extrabold'>
+        <span className='text-[#4b0082] [text-shadow:-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000,0_0_6px_rgba(0,0,0,0.8)] font-extrabold'>
           lead
         </span>
       </>
     ),
     className: "text-xl md:text-2xl font-semibold text-white mt-8",
-    direction: "right",
   },
   {
     text: (
       <>
         Aura that&nbsp;
-        <span className='text-[#d4af37] [text-shadow:0_2px_12px_rgba(255,255,255,0.35)] font-extrabold'>
+        <span className='text-[#d4af37] [text-shadow:-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000,0_0_6px_rgba(0,0,0,0.8)] font-extrabold'>
           owns
         </span>
         &nbsp;the room
       </>
     ),
     className: "text-xl md:text-2xl font-semibold text-white mt-8",
-    direction: "left",
   },
   {
-    text: "Coming Soon!",
-    className: "text-4xl md:text-6xl font-black text-white mt-8",
-    direction: "down",
+    text: "Corazon Jefe - Coming Soon!",
+    className: "text-4xl md:text-6xl font-black text-white mt-8 mb-24",
   },
 ];
 
-const AnimatedHero = ({ as = "p", containerClass = "", once = true }) => {
+const AnimatedHero = ({ as = "p" }) => {
   const MotionTag = motion[as] || motion.p;
 
   return (
-    <div className={containerClass}>
+    <div>
       {lines.map((line, i) => (
         <MotionTag
           key={i}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 0.7,
-            delay: i * 0.15,
+            duration: 1,
+            delay: i * 0.25,
           }}
           viewport={{
-            once,
-            amount: 1,
-            margin: "-10px",
+            amount: 0.25,
           }}
           className={line.className}
         >
